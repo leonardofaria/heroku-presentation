@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Heroku - Leonardo Faria</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="img/heroku.png">
+        </section>
+
+        <section>
+          <h1>Key points</h1>
+
+          <ul>
+            <li>Apps provide customer value, not infrastruture</li>
+            <li>Developers can use existing language skills & tools</li>
+            <li>Instantly Scale your apps to better serve your customers</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Key points</h1>
+
+          <ul>
+            <li>Secure & Traceable deployment</li>
+            <li>Simple Continuous Deployment</li>
+            <li>Largest addon marketplace of any developer platform</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="img/heroku-push-simple.png">
+
+          <p>
+            <small>Developer Driven Development</small>
+          </p>
+        </section>
+
+        <section>
+          <h1>Dynos</h1>
+
+          <ul>
+            <li>Containers responsable for running your application</li>
+            <li>Scalable horizontally and vertically</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="img/dynos.png">
+
+          <p>
+            <small><a href="https://devcenter.heroku.com/articles/dyno-types">Dyno types</a></small>
+          </p>
+        </section>
+
+        <section>
+          <img src="img/addons.png">
+
+          <p>
+            <small><a href="https://elements.heroku.com/addons">Add-ons</a></small>
+          </p>
+        </section>
+
+        <section>
+          <h1>Demos</h1>
+
+          <img src="img/dog.gif">
+        </section>
+
+        <section>
+          <h1>Demos</h1>
+
+          <ul>
+            <li>PHP deployment</li>
+            <li>Ruby bot and schedule addon</li>
+            <li>Github integration</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        progress: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
